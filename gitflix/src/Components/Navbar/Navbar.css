@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "hackclub";
+  src: url("./../../assets/Fonts/hackclub.ttf") format("truetype");
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-logo {
+  min-width: 150px;
+}
+
+.navbar-tagline {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.tag-text span {
+  font-family: "hackclub";
+  font-size: 1.4rem;
+}
