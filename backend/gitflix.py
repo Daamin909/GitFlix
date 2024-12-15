@@ -8,7 +8,7 @@ tokeytoken = {"Authorization": f"token {os.getenv('GH_TOKEN')}"}
 
 def getRandomRepo():
     page = random.randint(1, 100)  
-    url = f"{apiURL}/search/repositories?q={f"stars:>={random.randint(3, 10)}"}&sort=stars&order=asc&page={page}&per_page=1"
+    url = f"{apiURL}/search/repositories?q=stars:>={random.randint(3, 10)}&sort=stars&order=asc&page={page}&per_page=1"
     
     response = requests.get(url, headers=tokeytoken)
     if response.status_code == 200:
