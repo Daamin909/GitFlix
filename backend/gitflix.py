@@ -2,9 +2,7 @@ import requests
 import random
 import datetime
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 apiURL = "https://api.github.com"
 tokeytoken = {"Authorization": f"token {os.getenv('GH_TOKEN')}"}
 
